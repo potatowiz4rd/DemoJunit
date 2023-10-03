@@ -14,7 +14,7 @@ public class InterestRateTest {
 
     @Test
     public void test2() {
-        int month = 1;
+        int month = 2;
         String expectedInterestRate = "3%";
         String actualInterestRate = InterestRate.findInterestRate(false, month);
         assertEquals(expectedInterestRate, actualInterestRate);
@@ -22,7 +22,7 @@ public class InterestRateTest {
 
     @Test
     public void test3() {
-        int month = 3;
+        int month = 5;
         String expectedInterestRate = "3.5%";
         String actualInterestRate = InterestRate.findInterestRate(false, month);
         assertEquals(expectedInterestRate, actualInterestRate);
@@ -30,7 +30,7 @@ public class InterestRateTest {
 
     @Test
     public void test4() {
-        int month = 6;
+        int month = 11;
         String expectedInterestRate = "4.5%";
         String actualInterestRate = InterestRate.findInterestRate(false, month);
         assertEquals(expectedInterestRate, actualInterestRate);
@@ -70,7 +70,7 @@ public class InterestRateTest {
 
     @Test
     public void test9() {
-        int month = 9;
+        int month = 11;
         String expectedInterestRate = "4.4%";
         String actualInterestRate = InterestRate.findInterestRate(true, month);
         assertEquals(expectedInterestRate, actualInterestRate);
@@ -78,7 +78,7 @@ public class InterestRateTest {
 
     @Test
     public void test10() {
-        int month = 24;
+        int month = 12;
         String expectedInterestRate = "5.2%";
         String actualInterestRate = InterestRate.findInterestRate(true, month);
         assertEquals(expectedInterestRate, actualInterestRate);
